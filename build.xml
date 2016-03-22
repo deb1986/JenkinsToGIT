@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<project name="moveAndRename" default="move">
+	<target name="move">
+		<echo>Moving files .. </echo>
+		<move todir="Destination">
+			<fileset dir="Source">
+				<exclude name="**/*.xml" />
+			</fileset>
+		</move>
+	</target>
+</project>
